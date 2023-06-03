@@ -1,21 +1,21 @@
 /*CSS Code for index.html*/
 
 
-.header{padding: 40px; text-align: left; background: #004242; color: #f8f8ff; font-size: 30px;}
+.header{padding: 40px; text-align: left; background: #333; color: #f8f8ff; font-size: 30px;}
 body{font-family: Arial, Helvetica, sans-serif; background-color: #f2f3f4;}
-.navbar{overflow: hidden; background-color: #002147;}
+.navbar{overflow: hidden; background-color: darkred;}
 .navbar a {float: left; display: block; color: white; text-align: center; padding: 14px 20px; font-weight: bold; text-decoration: none;}
 .navbar a.right {float: right;}
 .navbar a:hover {background-color: #009966; color: white;}
-h2{font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: left;color: black}
+h2{font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: left;color: white}
 p1{font-family: Arial, Helvetica, sans-serif; text-align: left; font-size: 20px; color: black}
 *{box-sizing: border-box;}
 .row {display: flex; flex-wrap: wrap;}
-.sidebar{flex:30%; background-color: #004242; padding: 20px;}
+.sidebar{flex:30%; background-color: #333; padding: 20px;}
 .body{flex: 70%; background-color: #f2f3f4; padding: 20px;}
-h1{font-family: Arial, Helvetica, sans-serif; font-size: 35px; text-shadow: 3px 3px #000000}
+h1{font-family: Arial, Helvetica, sans-serif; font-size: 35px;}
 p{font-family: Arial, Helvetica, sans-serif; font-size: 20px;}
-h3{font-family: Arial, Helvetica, sans-serif; font-size: 30px;}
+h3{font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: white;}
 img{height: 200px; width: 360px; float: left; border-radius: 2px;border-color: red;}
-.footer{padding: 20px; text-align: center;;background-color: #004242;}
-h6{text-align: center; font-size: 15px; color:#f2f3f4;}
+.footer{padding: 20px; text-align: center;;background-color: #333; width: 100%; color: white;}
+h6{text-align: center; font-size: 15px; color:white;}

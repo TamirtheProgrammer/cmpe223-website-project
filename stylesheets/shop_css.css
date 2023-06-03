@@ -1,0 +1,72 @@
+/* Styling for the navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* Styling for the container */
+  .container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+  }
+  
+  .container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Styling for the form */
+  form {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table td, table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table input[type="checkbox"], table input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  table tr {
+    text-align: center;
+  }
+
+  table label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  table select {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  table button {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,320 +1,264 @@
 <!DOCTYPE html>
 <html>
 
-<!--Link External CSS here-->
+<link rel="stylesheet" href="C:\Programming Folder\CMPE223 Website Project\stylesheets\shop_css.css">
+<script src="C:\Programming Folder\CMPE223 Website Project\webpages\calculate.js"></script>
 
 <div class="navbar">
-
     <a href="index.html">Homepage</a>
     <a href="shop.html">Shop Online</a>
     <a href="contact.html">Contact Us</a>
-
 </div>
 
-    <div class="container">
+<div class="container">
+    <form>
+        <table>
+            <tr>
+                <td><label>Item</label></td>
+                <td><label>Properties</label></td>
+                <td><label>Number of Units</label></td>
+                <td><label>Cost ($)</label></td>
+            </tr>
 
-        <form>
-            <table>
-                <tr>
-                    <td><label>Item</label></td>
-                    <td><label>Properties</label></td>
-                    <td><label>Mumber of Units</label></td>
-                    <td><label>Cost ($)</label></td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox">Beats Studio 3</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
+            <tr>
+                <td><input type="checkbox" name="item[]" value="beats-studio-3">Beats Studio 3</td>
+                <td>
+                    <input type="radio" id="property1" name="property[beats-studio-3]" value="1">
+                    <label for="property1">Property 1 - Price$</label><br>
+                    <input type="radio" id="property2" name="property[beats-studio-3]" value="2">
+                    <label for="property2">Property 2 - Price$</label><br>
+                    <input type="radio" id="property3" name="property[beats-studio-3]" value="3">
+                    <label for="property3">Property 3 - Price$</label>
+                </td>
+                <td>
+                    <select name="units[beats-studio-3]">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
                     </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+                </td>
+                <td id="item1cost">$0.00</td>
+            </tr>
 
-                <tr>
-                    <!--Placeholder text for Properties of the products-->
-                    <td><input type="checkbox">Xiaomi Electric Scooter</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
 
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+          <tr>
+              <td><input type="checkbox" name="item[]" value="xiaomi-scooter">Xiaomi Electric Scooter</td>
+              <td>
+                  <input type="radio" id="property1" name="property[xiaomi-scooter]" value="1">
+                  <label for="property1">Property 1 - Price$</label><br>
+                  <input type="radio" id="property2" name="property[xiaomi-scooter]" value="2">
+                  <label for="property2">Property 2 - Price$</label><br>
+                  <input type="radio" id="property3" name="property[xiaomi-scooter]" value="3">
+                  <label for="property3">Property 3 - Price$</label>
+              </td>
+              <td>
+                  <select name="units[xiaomi-scooter]">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                  </select>
+              </td>
+              <td id="item2cost">$0.00</td>
+          </tr>
 
-                <tr>
-                    <td><input type="checkbox">High-Speed HDMI Cable</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
+          <tr>
+            <td><input type="checkbox" name="item[]" value="hdmi-cable">High-Speed HDMI Cable</td>
+            <td>
+                <input type="radio" id="property1" name="property[hdmi-cable]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[hdmi-cable]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[hdmi-cable]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[hdmi-cable]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item3cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="iphone-14">Apple iPhone 14 Pro Max</td>
+            <td>
+                <input type="radio" id="property1" name="property[iphone-14]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[iphone-14]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[iphone-14]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[iphone-14]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item4cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td><input type="checkbox">Apple iPhone 14 Pro Max</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="macbook-air">Apple Macbook Air</td>
+            <td>
+                <input type="radio" id="property1" name="property[macbook-air]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[macbook-air]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[macbook-air]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[macbook-air]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item5cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="red-camera">RED V-Raptor Camera</td>
+            <td>
+                <input type="radio" id="property1" name="property[red-camera]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[red-camera]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[red-camera]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[red-camera]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item6cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td><input type="checkbox">Apple Macbook Air</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="galaxy-s22">Samsung Galaxy S22 Ultra</td>
+            <td>
+                <input type="radio" id="property1" name="property[galaxy-s22]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[galaxy-s22]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[galaxy-s22]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[galaxy-s22]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item7cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="crystal-tv">Samsung Crystal UHD TV</td>
+            <td>
+                <input type="radio" id="property1" name="property[crystal-tv]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[crystal-tv]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[crystal-tv]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[beats-studio-3]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item8cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td><input type="checkbox">RED V-Raptor</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="sony-xperia">Sony Xperia I IV</td>
+            <td>
+                <input type="radio" id="property1" name="property[sony-xperia]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[sony-xperia]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[sony-xperia]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[sony-xperia]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item9cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="surface-pro">Microsoft Surface Pro 7</td>
+            <td>
+                <input type="radio" id="property1" name="property[surface-pro]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[surface-pro]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[surface-pro]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[surface-pro]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item10cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td><input type="checkbox">Samsung Galaxy S22 Ultra</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
+        <tr>
+            <td><input type="checkbox" name="item[]" value="wireless-router">Xiaomi Mi Wireless Router 4C</td>
+            <td>
+                <input type="radio" id="property1" name="property[wireless-router]" value="1">
+                <label for="property1">Property 1 - Price$</label><br>
+                <input type="radio" id="property2" name="property[wireless-router]" value="2">
+                <label for="property2">Property 2 - Price$</label><br>
+                <input type="radio" id="property3" name="property[wireless-router]" value="3">
+                <label for="property3">Property 3 - Price$</label>
+            </td>
+            <td>
+                <select name="units[wireless-router]">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </td>
+            <td id="item11cost">$0.00</td>
+        </tr>
 
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
+            <tr>
+                <td colspan="2">Total Cost</td>
+                <td><button type="button" onclick="calculateTotalCost()">Calculate</button></td>
+                <td id="totalCost">Price is Calculated here</td>
+            </tr>
+        </table>
+    </form>
+</div>
 
-                <tr>
-                    <td><input type="checkbox">Samsung Crystal UHD TV</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox">Sony Xperia I IV</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox">Microsoft Surface Pro 7</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td><input type="checkbox">Xiaomi Mi Wireless Router 4C</td>
-                    <td>
-                        <input type="radio" id="property1" name="Property 1" value="1">
-                        <label for="property1">Property 1 - Price$</label><br>
-                        <input type="radio" id="property2" name="Property 2" value="2">
-                        <label for="property2">Property 2 - Price$</label><br>
-                        <input type="radio" id="property3" name="Property 3" value="3">
-                        <label for="property3">Property 3 - Price$</label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                    <select name="Units" id="unit>">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td colspan="2">Total Cost</td>
-                    <td><button type="button">Calculate</button></td> <!--JS code should be linked to this button-->
-                    <td>"Price is Calculated here"</td> 
-                </tr>
-            </table>
-        </form>
-    </div>
 </html>

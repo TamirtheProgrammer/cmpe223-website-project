@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-<!--Link External CSS here-->
+<head>
+    <title>Contact Us!</title>
 
-    <head>
-        <title>Contact Us!</title>
-    </head>
+    <link rel="stylesheet" href="C:\Programming Folder\CMPE223 Website Project\stylesheets\contact_css.css">
 
+    <script>
+        function validateForm() {
+            var x = document.forms["commentSection"]["firstname"].value;
+            var y = document.forms["commentSection"]["lastname"].value;
+            var z = document.forms["commentSection"]["comment"].value;
+            if (x == "") 
+            {
+                alert("First name must be filled out");
+                return false;
+            }	
+            else if (y == "") 
+            {
+                alert("Last name must be filled out");
+                return false;
+            }
+            else if (z == "") 
+            {
+                alert("Please leave in your comment.");
+                return false;
+            }
+        }
+        </script>
 
+</head>
+
+<body>
     <div class="navbar">
-
         <a href="index.html">Homepage</a>
         <a href="shop.html">Shop Online</a>
-        <a href="contact.html">Contact Us</a>
-    
+        <a href="Products.html">Products</a>
     </div>
 
     <div class="container">
-    <body>
-        <form action id="commentSection">
-        <h1>Please fill in your Details: </h1><br>
-        <label>Name: <input type="text"></label><br>
-        <label>Surname: <input type="text"></label><br>
+        <h1>Please fill in your Details:</h1>
+        <form name="commentSection" action onsubmit="return validateForm()">
+            <label>Name: <input type="text" name="firstname"></label><br>
+            <label>Surname: <input type="text" name="lastname"></label><br>
 
-        <h1>Additional Comments</h1>
-        <textarea rows="6" cols="60" name="comment" form="commentSection">
-        Enter your comment here...
-        </textarea>
+            <h1>Additional Comments</h1>
+            <textarea rows="6" cols="60" name="comment">
+            Enter your comment here...
+            </textarea>
 
-        <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </form>
-    </body>
     </div>
+</body>
+
 </html>
